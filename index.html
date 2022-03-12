@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>DataTable</title>
+  <script src="./js/data.js"></script>
+  <script src="./js/custom.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="table">
+    <div class="table__header">
+      <div class="left">
+        <label for="limit-row">Show
+          <select name="limit-row" id="limit-row">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          entries
+        </label>
+      </div>
+      <div class="right">
+        <label for="search">
+          Search
+          <input type="text" class="table__search" id="table__search">
+          <span class="cancel-search"><i class="fas fa-times"></i></span>
+        </label>
+      </div>
+    </div>
+    <table id="table-1">
+      <tr>
+        <th class="title">
+          <div class="title__name">Name</div>
+          <span>
+            <i class="fas fa-sort-up"></i>
+            <i class="fas fa-sort-down"></i>
+          </span>
+        </th>
+        <th class="title">
+          <div class="title__name">Position</div>
+          <span>
+            <i class="fas fa-sort-up"></i>
+            <i class="fas fa-sort-down"></i>
+          </span>
+        </th>
+        <th class="title">
+          <div class="title__name">Office</div>
+          <span>
+            <i class="fas fa-sort-up"></i>
+            <i class="fas fa-sort-down"></i>
+          </span>
+        </th>
+        <th class="title">
+          <div class="title__name">Extn.</div>
+          <span>
+            <i class="fas fa-sort-up"></i>
+            <i class="fas fa-sort-down"></i>
+          </span>
+        </th>
+        <th class="title">
+          <div class="title__name"> Start date</div>
+          <span>
+            <i class="fas fa-sort-up"></i>
+            <i class="fas fa-sort-down"></i>
+          </span>
+        </th>
+        <th class="title">
+          <div class="title__name">Salary</div>
+          <span>
+            <i class="fas fa-sort-up"></i>
+            <i class="fas fa-sort-down"></i>
+          </span>
+        </th>
+      </tr>
+      <tbody id="table-body">
+
+      </tbody>
+    </table>
+    <div class="table__footer">
+      <div class="left table__info">
+
+      </div>
+      <div class="right">
+        <div class="pagination">
+          <div class="btn pagination__prev">
+            Previous
+          </div>
+          <ul class="pagination__list">
+          </ul>
+          <div class=" btn pagination__next">
+            Next
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
